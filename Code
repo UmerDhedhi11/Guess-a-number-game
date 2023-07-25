@@ -1,0 +1,15 @@
+import random
+print("Let's play guess the number")
+
+ran = random.randint(1,50)
+while(True):
+    guess = int(input("Guess a number: "))
+    if(ran == guess):
+        print("Congratulations you guessed it right")
+        break
+    elif(ran > guess):
+        print("The gussed number is too low")
+    elif(ran < guess):
+        print("The guessed number is too high")
+    else:
+        print("Invalid input")
