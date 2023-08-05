@@ -1,9 +1,9 @@
 import random
 print("Let's play guess the number")
 
-ran = random.randint(1,50)
+ran = random.randint(1,100)
 while(True):
-    guess = int(input("Guess a number: "))
+    guess = int(input("Guess a number between 1 and 100: "))
     if(ran == guess):
         print("Congratulations you guessed it right")
         break
